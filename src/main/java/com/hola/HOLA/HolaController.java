@@ -9,6 +9,8 @@ public class HolaController {
     @GetMapping("/hola")
     public String index() {
         int result = calculateSum(10, 20);
+        int result2 = calculateSum2(10, 20);
+        int result3 = calculateSum3(10, 20);
         int resultdd = idoKnowWhatImDoing(10,20);
         System.out.println("Result: " + result);
         return String.format("Greetings from Spring Boot! Result is %d", result);
