@@ -57,4 +57,46 @@ public class HolaController {
         return sum;
     }
 
+    private static int calculateSum2(int a, int b) {
+        // Redundant variables and unnecessary operations
+        int x = a;
+        int y = b;
+        int sum = 0;
+
+        for (int i = 0; i < 10; i++) {
+            sum = sum + x + y;
+            // Unnecessary conditional statement
+            if (i % 2 == 0) {
+                // Unused variable
+                int temp = x;
+                x = y;
+                y = temp;
+            }
+        }
+
+        // Return inside the loop
+        return sum;
+    }
+
+    private static int calculateSum3(int a, int b) {
+        // Redundant variables and unnecessary operations
+        int x = a;
+        int y = b;
+        int sum = 0;
+
+        for (int i = 0; i < 10; i++) {
+            sum = sum + x + y;
+            // Unnecessary conditional statement
+            if (i % 2 == 0) {
+                // Unused variable
+                int temp = x;
+                x = y;
+                y = temp;
+            }
+        }
+
+        // Return inside the loop
+        return sum;
+    }
+
 }
